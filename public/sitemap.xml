@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://quentintheet.fr/</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page À propos -->
+  <url>
+    <loc>https://quentintheet.fr/#apropos</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+    <!-- Page Compétences -->
+  <url>
+    <loc>https://quentintheet.fr/#competences</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+    <!-- Page Formations -->
+  <url>
+    <loc>https://quentintheet.fr/#formations</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Page Projets -->
+  <url>
+    <loc>https://quentintheet.fr/#projets</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Page Contact -->
+  <url>
+    <loc>https://quentintheet.fr/#contact</loc>
+    <lastmod>2024-11-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
