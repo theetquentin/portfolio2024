@@ -6,7 +6,7 @@ import {
 
 const Formations = () => {
   return (
-    <section id="formations" className="mx-auto px-8 max-w-3xl">
+    <section id="formations" className="menu mx-auto px-8 max-w-3xl">
       <div className="flex items-center gap-2">
         <IoSchoolOutline className="w-8 h-8" />
         <h2 className="text-xl text-zinc-900 font-bold">Formations</h2>

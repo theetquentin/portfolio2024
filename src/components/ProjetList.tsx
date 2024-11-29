@@ -39,7 +39,7 @@ const ProjetList: React.FC = () => {
   };
 
   return (
-    <section id="projets" className="mx-auto px-8 max-w-3xl">
+    <section id="projets" className="menu mx-auto px-8 max-w-3xl">
       <div
         className="flex items-center gap-2 cursor-pointer"
         onClick={toggleVisibility}

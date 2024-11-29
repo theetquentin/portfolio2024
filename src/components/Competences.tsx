@@ -7,7 +7,7 @@ import SysNetGit from "../data/SysNetGit";
 
 const Competences = () => {
   return (
-    <section id="competences" className="mx-auto px-8 max-w-3xl">
+    <section id="competences" className="mx-auto menu px-8 max-w-3xl">
       <div className="flex items-center gap-2">
         <IoBookOutline className="w-8 h-8" />
         <h2 className="text-xl text-zinc-900 font-bold">Compétences</h2>

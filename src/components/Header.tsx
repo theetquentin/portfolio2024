@@ -1,17 +1,44 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import MenuItems from "../data/MenuItems";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("accueil");
+  const sectionRefs = useRef<Element[]>([]);
+
+  useEffect(() => {
+    sectionRefs.current = Array.from(document.querySelectorAll("section.menu"));
+  }, []);
+
+  useEffect(() => {
+    if (sectionRefs.current.length === 0) return;
+
+    const observerOptions = { threshold: 0.5 }; // Section visible à 50%
+    const observer = new IntersectionObserver((entries) => {
+      const visibleSection = entries.find((entry) => entry.isIntersecting);
+      if (visibleSection) {
+        setActiveSection(visibleSection.target.id);
+      }
+    }, observerOptions);
+
+    sectionRefs.current.forEach((section: Element) =>
+      observer.observe(section)
+    );
+
+    return () => {
+      sectionRefs.current.forEach((section: Element) =>
+        observer.unobserve(section)
+      );
+    };
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  // Gestion du scrolling lors de l'ouverture du menu mobile
   useEffect(() => {
-    // Gestion du scrolling lors de l'ouverture du menu mobile
     if (menuOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
@@ -23,27 +50,7 @@ const Header = () => {
     };
   }, [menuOpen]);
 
-  // API Intersection Observer pour regarder dans quelle partie du site on se trouve
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSection = entries.find((entry) => entry.isIntersecting);
-        if (visibleSection) {
-          setActiveSection(visibleSection.target.id);
-        }
-      },
-      { threshold: 0.5 } // Section visible à 50%
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
-  // on ferme le menu mobile si on essaye de changer la taille de la fenêtre alors qu'il est ouvert
+  // Ferme le menu mobile en cas de redimensionnement
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768 && menuOpen) {

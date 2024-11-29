@@ -7,7 +7,10 @@ import {
 
 const Footer = () => {
   return (
-    <section id="contact" className="border-t-2 border-zinc-300 mt-10 py-4">
+    <section
+      id="contact"
+      className="menu border-t-2 border-zinc-300 mt-10 py-4"
+    >
       <div className="mx-auto px-8 max-w-3xl">
         <p className="text-base px-2 sm:text-lg text-zinc-800">
           Me contacter ?
