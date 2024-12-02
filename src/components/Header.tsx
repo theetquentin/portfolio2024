@@ -76,9 +76,9 @@ const Header = () => {
                   href={item.url}
                   target={item.icon ? "_blank" : undefined}
                   download={item.icon ? item.download : undefined}
-                  className={`flex p-4 items-center gap-2 rounded-full hover:bg-zinc-200/80 ${
+                  className={`flex p-4 items-center gap-2 rounded-full hover:underline decoration-2 underline-offset-4 ${
                     activeSection === item.url.replace("#", "")
-                      ? "bg-zinc-200/80 font-semibold"
+                      ? "underline font-semibold"
                       : ""
                   }`}
                 >
@@ -108,9 +108,9 @@ const Header = () => {
                   <a
                     href={item.url}
                     onClick={toggleMenu}
-                    className={`p-4 rounded-full hover:bg-zinc-200/80 ${
+                    className={`p-4 rounded-full hover:underline decoration-2 underline-offset-4${
                       activeSection === item.url.replace("#", "")
-                        ? "bg-zinc-300 font-bold"
+                        ? "underline font-semibold"
                         : ""
                     }`}
                   >

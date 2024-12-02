@@ -26,8 +26,7 @@ const Formations = () => {
             </h3>
             <div className="text-sm sm:text-base flex gap-5 text-zinc-800">
               <a
-                className="flex items-center gap-1 hover:text-blue-700
-                text-blue-600 transition-colors hover:underline"
+                className="flex items-center gap-1 text-blue-700 hover:text-blue-800 transition-colors hover:underline"
                 href="https://3wacademy.fr/"
                 target="_blank"
               >
@@ -59,9 +58,8 @@ const Formations = () => {
             </h3>
             <div className="text-sm sm:text-base flex gap-5 text-zinc-800 pb-2">
               <a
-                className="flex items-center gap-1 hover:text-blue-700
-                hover:underline
-                text-blue-500 transition-colors"
+                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
+                hover:underline transition-colors"
                 href="https://www.univ-brest.fr/fr"
                 target="_blank"
               >
@@ -108,9 +106,8 @@ const Formations = () => {
             </h3>
             <div className="text-sm sm:text-base flex gap-5 text-zinc-800 pb-2">
               <a
-                className="flex items-center gap-1 hover:text-blue-700
-                hover:underline
-                text-blue-500 transition-colors"
+                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
+                hover:underline transition-colors"
                 href="https://www.saint-louis29.net/"
                 target="_blank"
               >
@@ -122,14 +119,14 @@ const Formations = () => {
                 <p>2021-2023</p>
               </div>
             </div>
-            <ul className="text-sm md:text-base text-zinc-800 font-semibold text w-72 sm:w-80 md:w-96 list-disc list-inside">
-              <a
-                className="underline"
-                target="_blank"
-                href="https://www.elisablaise.fr/"
-              >
-                Lamennais Douarnenez
-              </a>
+            <a
+              className="underline text-sm md:text-base text-zinc-800 font-semibold"
+              target="_blank"
+              href="https://www.elisablaise.fr/"
+            >
+              Lamennais Douarnenez
+            </a>
+            <ul className="w-72 sm:w-80 md:w-96 list-disc list-inside">
               <li className="px-2 text-zinc-800 font-normal text-sm">
                 2023, 6 semaines, refonte du site web du collège Lamennais Cap
                 Sizun
@@ -160,9 +157,8 @@ const Formations = () => {
             </h3>
             <div className="text-sm sm:text-base flex gap-5 text-zinc-800">
               <a
-                className="flex items-center gap-1 hover:text-blue-700
-                hover:underline
-                text-blue-500 transition-colors "
+                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
+                hover:underline transition-colors "
                 href="https://www.elisablaise.fr/"
                 target="_blank"
               >
