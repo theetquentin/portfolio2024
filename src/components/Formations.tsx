@@ -9,7 +9,7 @@ const Formations = () => {
     <section id="formations" className="menu mx-auto px-8 max-w-3xl">
       <div className="flex items-center gap-2">
         <IoSchoolOutline className="w-8 h-8" />
-        <h2 className="text-xl text-zinc-900 font-bold">Formations</h2>
+        <h2 className="text-xl font-bold">Formations</h2>
       </div>
       <div className="mt-5">
         <div className="flex flex-col md:flex-row items-center p-4 gap-4">
@@ -21,12 +21,13 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg text-zinc-900 font-semibold">
+            <h3 className="text-base sm:text-lg font-semibold">
               Concepteur Développeur Full-Stack
             </h3>
-            <div className="text-sm sm:text-base flex gap-5 text-zinc-800">
+            <div className="text-sm sm:text-base flex gap-5">
               <a
-                className="flex items-center gap-1 text-blue-700 hover:text-blue-800 transition-colors hover:underline"
+                className="flex items-center gap-1 text-blue-500
+                hover:underline"
                 href="https://3wacademy.fr/"
                 target="_blank"
               >
@@ -41,7 +42,7 @@ const Formations = () => {
           </div>
         </div>
         <div className="flex justify-center md:justify-start">
-          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 box-border"></div>
+          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 dark:border-zinc-800 box-border"></div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center p-4 gap-4">
@@ -53,13 +54,13 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg text-zinc-900 font-semibold">
+            <h3 className="text-base sm:text-lg font-semibold">
               Niveau 3ème année de licence CDA
             </h3>
-            <div className="text-sm sm:text-base flex gap-5 text-zinc-800 pb-2">
+            <div className="text-sm sm:text-base flex gap-5 pb-2">
               <a
-                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
-                hover:underline transition-colors"
+                className="flex items-center gap-1 text-blue-500
+                hover:underline"
                 href="https://www.univ-brest.fr/fr"
                 target="_blank"
               >
@@ -72,7 +73,7 @@ const Formations = () => {
               </div>
             </div>
             <div>
-              <p className="text-zinc-900 text-sm sm:text-base w-60 sm:w-72 md:w-96">
+              <p className="text-sm sm:text-base w-60 sm:w-72 md:w-96">
                 Stage de 8 semaines chez{" "}
                 <a
                   href="https://labsticc.fr/fr"
@@ -89,7 +90,7 @@ const Formations = () => {
         </div>
 
         <div className="flex justify-center md:justify-start">
-          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 box-border"></div>
+          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 dark:border-zinc-800 box-border"></div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center p-4 gap-4">
@@ -101,13 +102,13 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg text-zinc-900 font-semibold">
+            <h3 className="text-base sm:text-lg font-semibold">
               BTS Services Informatiques aux organisations
             </h3>
-            <div className="text-sm sm:text-base flex gap-5 text-zinc-800 pb-2">
+            <div className="text-sm sm:text-base flex gap-5 pb-2">
               <a
-                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
-                hover:underline transition-colors"
+                className="flex items-center gap-1 text-blue-500
+                hover:underline"
                 href="https://www.saint-louis29.net/"
                 target="_blank"
               >
@@ -120,18 +121,18 @@ const Formations = () => {
               </div>
             </div>
             <a
-              className="underline text-sm md:text-base text-zinc-800 font-semibold"
+              className="underline text-sm md:text-base font-semibold"
               target="_blank"
               href="https://www.elisablaise.fr/"
             >
               Lamennais Douarnenez
             </a>
             <ul className="w-72 sm:w-80 md:w-96 list-disc list-inside">
-              <li className="px-2 text-zinc-800 font-normal text-sm">
+              <li className="px-2 font-normal text-sm">
                 2023, 6 semaines, refonte du site web du collège Lamennais Cap
                 Sizun
               </li>
-              <li className="px-2 text-zinc-800 font-normal text-sm">
+              <li className="px-2 font-normal text-sm">
                 2022, 4 semaines, Gestion du parc informatique, systèmes et
                 réseaux
               </li>
@@ -140,7 +141,7 @@ const Formations = () => {
         </div>
 
         <div className="flex justify-center md:justify-start">
-          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 box-border"></div>
+          <div className="ms-12 md:ms-[2.9rem] p-6 border-l-4 border-zinc-200 dark:border-zinc-800 box-border"></div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center p-4 gap-4">
@@ -152,13 +153,13 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg text-zinc-900 font-semibold">
+            <h3 className="text-base sm:text-lg font-semibold">
               Bac ES, option mathématiques, mention bien
             </h3>
-            <div className="text-sm sm:text-base flex gap-5 text-zinc-800">
+            <div className="text-sm sm:text-base flex gap-5">
               <a
-                className="flex items-center gap-1 text-blue-700 hover:text-blue-800
-                hover:underline transition-colors "
+                className="flex items-center gap-1 text-blue-500
+                hover:underline"
                 href="https://www.elisablaise.fr/"
                 target="_blank"
               >

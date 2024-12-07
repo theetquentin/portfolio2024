@@ -49,7 +49,7 @@ const ProjetList: React.FC = () => {
         ) : (
           <IoFolderOutline className="w-8 h-8 transition-transform duration-300 ease-in-out" />
         )}
-        <h2 className="text-xl text-zinc-900 font-bold">Projets</h2>
+        <h2 className="text-xl font-bold">Projets</h2>
         <IoChevronDownOutline
           className={`ml-auto w-8 h-8 transition-transform duration-300 ${
             isVisible ? "rotate-180" : "rotate-0"
@@ -66,14 +66,13 @@ const ProjetList: React.FC = () => {
       >
         {/* Filtres */}
         <div>
-          <h3 className="text-base md:text-lg text-zinc-900 font-semibold">
-            Filtrer
-          </h3>
+          <h3 className="text-base md:text-lg font-semibold">Filtrer</h3>
           <div className="flex flex-col gap-2 mt-2">
             {LangagesData.map((langage) => (
               <label
                 key={langage}
-                className="flex text-[0.7rem] sm:text-base items-center gap-2 bg-zinc-100 hover:bg-zinc-200/80 rounded-lg p-2 cursor-pointer"
+                className="flex text-[0.7rem] sm:text-base items-center gap-2 bg-zinc-200/70 hover:bg-zinc-300/70
+                dark:bg-zinc-800/70 dark:hover:bg-zinc-700/70 rounded-lg p-2 cursor-pointer"
               >
                 <input
                   type="checkbox"
@@ -100,7 +99,7 @@ const ProjetList: React.FC = () => {
               />
             ))}
             {projetsFiltres.length === 0 && (
-              <p className="text-center text-zinc-500">Aucun projet trouvé.</p>
+              <p className="text-center">Aucun projet trouvé.</p>
             )}
           </ul>
         </div>

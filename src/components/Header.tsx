@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
+import { LiaToggleOffSolid, LiaToggleOnSolid } from "react-icons/lia";
 import MenuItems from "../data/MenuItems";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("accueil");
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const sectionRefs = useRef<Element[]>([]);
 
   useEffect(() => {
@@ -37,6 +39,15 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const toggleTheme = () => {
+    setIsDarkMode((prev) => !prev);
+    if (isDarkMode) {
+      document.body.classList.remove("dark"); // Retirer la classe dark
+    } else {
+      document.body.classList.add("dark"); // Ajouter la classe dark
+    }
+  };
+
   // Gestion du scrolling lors de l'ouverture du menu mobile
   useEffect(() => {
     if (menuOpen) {
@@ -66,9 +77,16 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 w-full z-30">
-      <nav className="flex justify-end mx-auto">
+      <nav className="flex justify-between items-center mx-auto">
         {/* Menu desktop */}
-        <div className="hidden md:flex justify-center items-center mx-auto mt-3 shadow-md rounded-full backdrop-blur-md saturate-200 bg-white/70">
+        <div className="hidden md:flex justify-center items-center mx-auto mt-3 shadow-md rounded-full backdrop-blur-md saturate-200 bg-zinc-100/70 dark:bg-zinc-900/70 max-[800px]:text-sm">
+          <button onClick={toggleTheme} className="px-4 pt-1">
+            {isDarkMode ? (
+              <LiaToggleOnSolid className="w-6 h-6 text-blue-500 transition-all duration-300 transform" />
+            ) : (
+              <LiaToggleOffSolid className="w-6 h-6 transition-all duration-300 transform" />
+            )}
+          </button>
           <ul className="flex gap-6 items-center">
             {MenuItems.map((item) => (
               <li key={item.name}>
@@ -76,7 +94,7 @@ const Header = () => {
                   href={item.url}
                   target={item.icon ? "_blank" : undefined}
                   download={item.icon ? item.download : undefined}
-                  className={`flex p-4 items-center gap-2 rounded-full hover:underline decoration-2 underline-offset-4 ${
+                  className={`flex p-4 items-center gap-2 hover:underline decoration-2 underline-offset-4 ${
                     activeSection === item.url.replace("#", "")
                       ? "underline font-semibold"
                       : ""
@@ -91,6 +109,15 @@ const Header = () => {
         </div>
 
         {/* Menu mobile */}
+
+        <button onClick={toggleTheme} className="md:hidden text-4xl p-4">
+          {isDarkMode ? (
+            <LiaToggleOnSolid className="text-blue-500 transition-all duration-300 z-10" />
+          ) : (
+            <LiaToggleOffSolid className="transition-all duration-300 z-10" />
+          )}
+        </button>
+
         <div
           onClick={toggleMenu}
           className="text-4xl cursor-pointer md:hidden p-4 z-50"
@@ -100,7 +127,7 @@ const Header = () => {
 
         {menuOpen && (
           <div
-            className={`fixed top-0 left-0 bg-white w-full h-screen transition-opacity duration-300 ease-in-out z-10`}
+            className={`fixed top-0 left-0 w-full h-screen bg-zinc-100 dark:bg-zinc-900 transition-opacity duration-300 ease-in-out z-10`}
           >
             <ul className="flex flex-col justify-center items-center gap-8 p-4 w-full h-screen">
               {MenuItems.map((item) => (

@@ -10,7 +10,7 @@ const Competences = () => {
     <section id="competences" className="mx-auto menu px-8 max-w-3xl">
       <div className="flex items-center gap-2">
         <IoBookOutline className="w-8 h-8" />
-        <h2 className="text-xl text-zinc-900 font-bold">Compétences</h2>
+        <h2 className="text-xl font-bold">Compétences</h2>
       </div>
       <DevWeb />
       <DevLogiciel />
@@ -18,7 +18,7 @@ const Competences = () => {
       <SysNetGit />
       <div className="flex items-center gap-2 pt-4">
         <IoLanguageOutline className="w-6 h-6" />
-        <p className="text-lg text-zinc-800 font-light">Anglais niveau B2</p>
+        <p className="text-lg font-light">Anglais niveau B2</p>
       </div>
     </section>
   );

@@ -37,7 +37,7 @@ const ProjetsData: ProjetsDataProps[] = [
     id: 5,
     titre: "Portfolio 2024",
     description:
-      "Création de mon portfolio minimaliste en 2024. Bien que j'aie déjà un portfolio, j'ai décidé de repenser le design en utilisant des technologies que j'ai apprises depuis, telles que TypeScript et React. Ce projet me permet également de découvrir de nouveaux outils comme Astro et Tailwind pour élargir mes compétences et proposer un site plus moderne et performant.",
+      "Création de mon portfolio minimaliste en 2024. Bien que j'aie déjà un portfolio, j'ai décidé de repenser le design en utilisant des technologies que j'ai apprises depuis, telles que TypeScript et React. Ce projet me permet également de découvrir de nouveaux outils comme Tailwind pour élargir mes compétences et proposer un site plus moderne et performant.",
     lien: "https://github.com/theetquentin/portfolio2024/",
     langages: ["JavaScript", "TypeScript", "React", "TailwindCSS"],
   },
