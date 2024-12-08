@@ -141,13 +141,16 @@ const Header = () => {
                   <a
                     href={item.url}
                     onClick={toggleMenu}
-                    className={`p-4 rounded-full hover:underline decoration-2 underline-offset-4${
+                    target={item.icon ? "_blank" : undefined}
+                    download={item.icon ? item.download : undefined}
+                    className={`flex gap-2 p-4 rounded-full hover:underline decoration-2 underline-offset-4 text-primary${
                       activeSection === item.url.replace("#", "")
-                        ? "underline font-semibold"
+                        ? "underline font-semibold text-primary"
                         : ""
                     }`}
                   >
                     {item.name}
+                    {item.icon}
                   </a>
                 </li>
               ))}
