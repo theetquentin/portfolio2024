@@ -1,20 +1,12 @@
-import React from "react";
+import type { IconCProps } from "../interfaces/IconCProps.interface";
 
-interface IconCProps {
-  color1?: string;
-  color2?: string;
-  color3?: string;
-  color4?: string;
-  size?: number | string;
-}
-
-const IconC: React.FC<IconCProps> = ({
+const IconC = ({
   color1 = "#004482",
   color2 = "#00599c",
   color3 = "#659ad2",
   color4 = "#fff",
   size = "100",
-}) => {
+}: IconCProps) => {
   return (
     <svg
       viewBox="32.18585611720149 20.47 223.6851360941233 247.05999999999997"

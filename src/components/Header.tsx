@@ -42,9 +42,11 @@ const Header = () => {
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
     if (isDarkMode) {
-      document.body.classList.remove("dark"); // Retirer la classe dark
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
     } else {
-      document.body.classList.add("dark"); // Ajouter la classe dark
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
     }
   };
 
@@ -79,12 +81,12 @@ const Header = () => {
     <header className="sticky top-0 w-full z-30">
       <nav className="flex justify-between items-center mx-auto">
         {/* Menu desktop */}
-        <div className="hidden md:flex justify-center items-center mx-auto mt-3 shadow-md rounded-full backdrop-blur-md saturate-200 bg-zinc-100/70 dark:bg-zinc-900/70 max-[800px]:text-sm">
+        <div className="hidden md:flex justify-center items-center mx-auto mt-3 shadow-md rounded-full backdrop-blur-md saturate-200 bg-background/70 max-[800px]:text-sm">
           <button onClick={toggleTheme} className="px-4 pt-1">
             {isDarkMode ? (
               <LiaToggleOnSolid className="w-6 h-6 text-blue-500 transition-all duration-300 transform" />
             ) : (
-              <LiaToggleOffSolid className="w-6 h-6 transition-all duration-300 transform" />
+              <LiaToggleOffSolid className="w-6 h-6 text-primary transition-all duration-300 transform" />
             )}
           </button>
           <ul className="flex gap-6 items-center">
@@ -94,9 +96,9 @@ const Header = () => {
                   href={item.url}
                   target={item.icon ? "_blank" : undefined}
                   download={item.icon ? item.download : undefined}
-                  className={`flex p-4 items-center gap-2 hover:underline decoration-2 underline-offset-4 ${
+                  className={`flex p-4 items-center gap-2 hover:underline decoration-2 underline-offset-4 text-primary${
                     activeSection === item.url.replace("#", "")
-                      ? "underline font-semibold"
+                      ? "underline font-semibold text-primary"
                       : ""
                   }`}
                 >
@@ -114,7 +116,7 @@ const Header = () => {
           {isDarkMode ? (
             <LiaToggleOnSolid className="text-blue-500 transition-all duration-300 z-10" />
           ) : (
-            <LiaToggleOffSolid className="transition-all duration-300 z-10" />
+            <LiaToggleOffSolid className="transition-all duration-300 z-10 text-primary" />
           )}
         </button>
 
@@ -122,12 +124,16 @@ const Header = () => {
           onClick={toggleMenu}
           className="text-4xl cursor-pointer md:hidden p-4 z-50"
         >
-          {menuOpen ? <IoClose /> : <IoMenu />}
+          {menuOpen ? (
+            <IoClose className="text-primary" />
+          ) : (
+            <IoMenu className="text-primary" />
+          )}
         </div>
 
         {menuOpen && (
           <div
-            className={`fixed top-0 left-0 w-full h-screen bg-zinc-100 dark:bg-zinc-900 transition-opacity duration-300 ease-in-out z-10`}
+            className={`fixed top-0 left-0 w-full h-screen bg-background transition-opacity duration-300 ease-in-out z-10`}
           >
             <ul className="flex flex-col justify-center items-center gap-8 p-4 w-full h-screen">
               {MenuItems.map((item) => (

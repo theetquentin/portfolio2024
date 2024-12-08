@@ -8,22 +8,22 @@ const SysNetGit: React.FC = () => {
   const sysNetGitLinks = [
     {
       name: "Git",
-      icon: <FaGitAlt className="w-6 h-6" />,
+      icon: <FaGitAlt className="w-6 h-6 text-primary" />,
       url: "https://git-scm.com/",
     },
     {
       name: "Bash",
-      icon: <SiGnubash className="w-6 h-6" />,
+      icon: <SiGnubash className="w-6 h-6 text-primary" />,
       url: "https://www.gnu.org/software/bash/",
     },
     {
       name: "PowerShell",
-      icon: <SiPowershell className="w-6 h-6" />,
+      icon: <SiPowershell className="w-6 h-6 text-primary" />,
       url: "https://learn.microsoft.com/fr-fr/powershell/",
     },
     {
       name: "Configuration réseau",
-      icon: <IoGlobeOutline className="w-6 h-6" />,
+      icon: <IoGlobeOutline className="w-6 h-6 text-primary" />,
       url: "https://fr.wikipedia.org/wiki/R%C3%A9seau_informatique",
     },
   ];

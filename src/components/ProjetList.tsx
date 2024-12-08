@@ -45,13 +45,13 @@ const ProjetList: React.FC = () => {
         onClick={toggleVisibility}
       >
         {isVisible ? (
-          <IoFolderOpenOutline className="w-8 h-8 transition-transform duration-300 ease-in-out" />
+          <IoFolderOpenOutline className="w-8 h-8 transition-transform duration-300 ease-in-out text-primary" />
         ) : (
-          <IoFolderOutline className="w-8 h-8 transition-transform duration-300 ease-in-out" />
+          <IoFolderOutline className="w-8 h-8 transition-transform duration-300 ease-in-out text-primary" />
         )}
-        <h2 className="text-xl font-bold">Projets</h2>
+        <h2 className="text-xl font-bold text-primary">Projets</h2>
         <IoChevronDownOutline
-          className={`ml-auto w-8 h-8 transition-transform duration-300 ${
+          className={`ml-auto w-8 h-8 transition-transform duration-300 text-primary ${
             isVisible ? "rotate-180" : "rotate-0"
           }`}
         />
@@ -66,13 +66,15 @@ const ProjetList: React.FC = () => {
       >
         {/* Filtres */}
         <div>
-          <h3 className="text-base md:text-lg font-semibold">Filtrer</h3>
+          <h3 className="text-base md:text-lg font-semibold text-primary">
+            Filtrer
+          </h3>
           <div className="flex flex-col gap-2 mt-2">
             {LangagesData.map((langage) => (
               <label
                 key={langage}
-                className="flex text-[0.7rem] sm:text-base items-center gap-2 bg-zinc-200/70 hover:bg-zinc-300/70
-                dark:bg-zinc-800/70 dark:hover:bg-zinc-700/70 rounded-lg p-2 cursor-pointer"
+                className="flex text-[0.7rem] sm:text-base items-center gap-2 bg-card/70 hover:bg-border/70
+              rounded-lg p-2 cursor-pointer"
               >
                 <input
                   type="checkbox"
@@ -80,7 +82,7 @@ const ProjetList: React.FC = () => {
                   onChange={() => handleLangageChange(langage)}
                   className="accent-zinc-600"
                 />
-                <span>{langage}</span>
+                <span className="text-primary">{langage}</span>
               </label>
             ))}
           </div>
@@ -99,7 +101,9 @@ const ProjetList: React.FC = () => {
               />
             ))}
             {projetsFiltres.length === 0 && (
-              <p className="text-center">Aucun projet trouvé.</p>
+              <p className="text-center text-primary/85">
+                Aucun projet trouvé.
+              </p>
             )}
           </ul>
         </div>

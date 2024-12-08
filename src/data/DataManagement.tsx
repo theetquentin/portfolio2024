@@ -7,12 +7,12 @@ const DataManagement = () => {
     {
       name: "MySQL",
       url: "https://www.mysql.com/",
-      icon: <GrMysql className="w-6 h-6" />,
+      icon: <GrMysql className="w-6 h-6 text-primary" />,
     },
     {
       name: "MariaDB",
       url: "https://mariadb.org/",
-      icon: <SiMariadbfoundation className="w-8 h-8" />,
+      icon: <SiMariadbfoundation className="w-8 h-8 text-primary" />,
     },
   ];
 

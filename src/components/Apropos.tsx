@@ -10,22 +10,27 @@ const Apropos = () => {
           alt="Portrait de Quentin"
         />
 
-        <h1 className="text-3xl font-extrabold ">Quentin Theet</h1>
-        <h2 className="text-xl font-light  mt-1">Développeur FullStack</h2>
+        <h1 className="text-3xl font-extrabold text-primary">Quentin Theet</h1>
+        <h2 className="text-xl font-light mt-1 text-primary/85">
+          Développeur FullStack
+        </h2>
         <div className="flex items-center justify-center mt-1">
-          <div className="text-lg font-light flex items-center">
-            <IoLocationOutline /> Milly-la-Forêt, 91490
+          <div className="text-lg font-light flex items-center text-primary/85">
+            <IoLocationOutline className="text-primary/85" /> Milly-la-Forêt,
+            91490
           </div>
         </div>
       </article>
 
       <section id="apropos" className="mx-auto mt-20 px-8 max-w-3xl">
         <div className="flex items-center gap-1">
-          <IoIdCardOutline className="w-8 h-8" />
-          <h2 className="text-lg sm:text-xl  font-bold">À propos</h2>
+          <IoIdCardOutline className="w-8 h-8 text-primary" />
+          <h2 className="text-lg sm:text-xl font-bold text-primary">
+            À propos
+          </h2>
         </div>
 
-        <p className="text-base sm:text-lg pt-4">
+        <p className="text-base sm:text-lg pt-4 text-primary">
           Actuellement à la recherche d'une alternance, je suis passionné par le
           développement web et en particulier par les frameworks JavaScript tels
           que React et Vue.js. Mon objectif est de mettre en pratique mes

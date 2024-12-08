@@ -10,9 +10,9 @@ const DevLogiciel = () => {
       url: "https://www.w3schools.com/c/",
       icon: (
         <IconC
-          color1="text-zinc-800"
-          color2="text-zinc-800"
-          color3="text-zinc-800"
+          color1="text-primary"
+          color2="text-primary"
+          color3="text-primary"
           size="1.5rem"
         />
       ),
@@ -20,12 +20,12 @@ const DevLogiciel = () => {
     {
       name: "Java",
       url: "https://www.oracle.com/java/",
-      icon: <FaJava className="w-6 h-6" />,
+      icon: <FaJava className="w-6 h-6 text-primary" />,
     },
     {
       name: "Python",
       url: "https://www.python.org/",
-      icon: <IoLogoPython className="w-6 h-6" />,
+      icon: <IoLogoPython className="w-6 h-6 text-primary" />,
     },
   ];
 
