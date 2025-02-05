@@ -31,14 +31,14 @@ const Apropos = () => {
         </div>
 
         <p className="text-base sm:text-lg pt-4 text-primary">
-          Actuellement à la recherche d'une alternance, je suis passionné par le
-          développement web et en particulier par les frameworks JavaScript tels
-          que React et Vue.js. Mon objectif est de mettre en pratique mes
-          compétences techniques tout en continuant à apprendre au sein d'une
-          équipe dynamique. Je suis motivé par les défis techniques et je
-          souhaite contribuer à des projets innovants qui font appel à ma
-          créativité et à mes capacités d'analyse. N'hésitez pas à me contacter
-          pour échanger sur d'éventuelles opportunités !
+          Actuellement en alternance à la mairie de Milly-la-Forêt, je suis
+          passionné par le développement web et en particulier par les
+          frameworks JavaScript tels que React et Vue.js. Cette expérience me
+          permet de mettre en pratique mes compétences techniques tout en
+          continuant à apprendre au sein d'une équipe dynamique. Je suis motivé
+          par les défis et j'aime contribuer à des projets innovants
+          qui font appel à ma créativité et à mes capacités d'analyse. N'hésitez
+          pas à me contacter pour échanger !
         </p>
       </section>
     </div>

@@ -49,7 +49,7 @@ const Footer = () => {
             <p className="text-sm sm:text-base text-primary/85">
               Theet Quentin
             </p>
-            <p className="text-sm text-primary/85">© 2024</p>
+            <p className="text-sm text-primary/85">© 2025</p>
           </div>
         </div>
       </div>
