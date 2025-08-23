@@ -19,11 +19,11 @@ const ProjetsData: ProjetsDataProps[] = [
   },
   {
     id: 3,
-    titre: "Pokemon abilities",
+    titre: "PokeUtiliy",
     description:
-      "Recherche d'un talent de Pokémon ou en génère un avec un bouton. Lorsque que le talent est trouvé, son nom est affiché en anglais et en français, accompagné d'une description. Les pokémons qui possèdent le talent ainsi que leurs images sont affichés juste en dessous. Je récupère ces ressources avec l'api pokeapiv2 qui donne pleins d'informations diverses sur tous les pokémons.",
-    lien: "https://github.com/theetquentin/pokemonabilities",
-    langages: ["JavaScript"],
+      "Une application web moderne sur le thème Pokémon (pokédex multilingue) développée avec React, TypeScript, TailwindCSS et l'aide du wrapper poke-node.",
+    lien: "https://github.com/theetquentin/PokeUtility",
+    langages: ["JavaScript", "TypeScript","React","TailwindCSS"],
   },
   {
     id: 4,
@@ -40,6 +40,14 @@ const ProjetsData: ProjetsDataProps[] = [
       "Création de mon portfolio minimaliste en 2024. Bien que j'aie déjà un portfolio, j'ai décidé de repenser le design en utilisant des technologies que j'ai apprises depuis, telles que TypeScript et React. Ce projet me permet également de découvrir de nouveaux outils comme Tailwind pour élargir mes compétences et proposer un site plus moderne et performant.",
     lien: "https://github.com/theetquentin/portfolio2024/",
     langages: ["JavaScript", "TypeScript", "React", "TailwindCSS"],
+  },
+  {
+    id: 6,
+    titre: "Projet-Intranet",
+    description:
+      "Ce projet est une application intranet construite avec une architecture en couches.",
+    lien: "https://github.com/LuffyStar93/Projet-Intranet---Architecture-en-Couches",
+    langages: ["JavaScript", "TypeScript", "React", "ExpressJS","MySQL"],
   },
 ];
 
