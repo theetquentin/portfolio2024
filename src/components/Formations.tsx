@@ -22,10 +22,10 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg font-semibold text-primary">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary">
               Concepteur Développeur Full-Stack
             </h3>
-            <div className="text-sm sm:text-base flex gap-5">
+            <div className="text-sm sm:text-base flex gap-5 pb-2">
               <a
                 className="flex items-center gap-1 text-blue-500
                 hover:underline"
@@ -40,6 +40,25 @@ const Formations = () => {
                 <p className="text-primary">2024-2025</p>
               </div>
             </div>
+            <div>
+              <p className="text-sm sm:text-base w-60 sm:w-72 md:w-96 text-primary">
+                Alternance d'11 mois à la{" "}
+                <a
+                  href="https://www.milly-la-foret.fr/"
+                  target="_blank"
+                  className="font-semibold underline text-primary"
+                >
+                  Mairie de Milly-la-Forêt
+                </a>
+                , Développement Intranet (partage de document, demande de
+                matériel, actualités){" "}
+                <span className="block">
+                  {" "}
+                  Administration Systèmes & Réseaux (serveurs, postes, active
+                  directory){" "}
+                </span>
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex justify-center md:justify-start">
@@ -51,7 +70,7 @@ const Formations = () => {
             <IconUbo />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg font-semibold text-primary">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary">
               Niveau 3ème année de licence CDA
             </h3>
             <div className="text-sm sm:text-base flex gap-5 pb-2">
@@ -79,8 +98,9 @@ const Formations = () => {
                 >
                   Lab-STICC
                 </a>
-                , développement d'application Python, optimisation
-                multi-objectifs
+                , Optimisation multi-objectifs sur systèmes HPC avec NSGA-II,
+                incluant crossover, sélection par front de Pareto et évaluation
+                de solutions optimales.
               </p>
             </div>
           </div>
@@ -99,7 +119,7 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg font-semibold text-primary">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary">
               BTS Services Informatiques aux organisations
             </h3>
             <div className="text-sm sm:text-base flex gap-5 pb-2">
@@ -150,7 +170,7 @@ const Formations = () => {
             />
           </a>
           <div>
-            <h3 className="text-base sm:text-lg font-semibold text-primary">
+            <h3 className="text-lg sm:text-xl font-semibold text-primary">
               Bac ES, option mathématiques, mention bien
             </h3>
             <div className="text-sm sm:text-base flex gap-5">
