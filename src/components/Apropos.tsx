@@ -16,8 +16,8 @@ const Apropos = () => {
         </h2>
         <div className="flex items-center justify-center mt-1">
           <div className="text-lg font-light flex items-center text-primary/85">
-            <IoLocationOutline className="text-primary/85" /> Milly-la-Forêt,
-            91490
+            <IoLocationOutline className="text-primary/85" /> Plonévez-Porzay,
+            29550
           </div>
         </div>
       </article>
@@ -31,14 +31,15 @@ const Apropos = () => {
         </div>
 
         <p className="text-base sm:text-lg pt-4 text-primary">
-          Actuellement en alternance à la mairie de Milly-la-Forêt, je suis
-          passionné par le développement web et en particulier par les
-          frameworks JavaScript tels que React et Vue.js. Cette expérience me
-          permet de mettre en pratique mes compétences techniques tout en
-          continuant à apprendre au sein d'une équipe dynamique. Je suis motivé
-          par les défis et j'aime contribuer à des projets innovants
-          qui font appel à ma créativité et à mes capacités d'analyse. N'hésitez
-          pas à me contacter pour échanger !
+          Développeur passionné, j'ai travaillé avec des frameworks JavaScript
+          tels que React et Vue.js, tout en développant des services back-end et
+          des API avec des architectures différentes (MVC, Multi-couches,
+          Microservices). J'ai également acquis une première expérience en Java,
+          ce qui me permet d'évoluer dans des environnements orientés objets.
+          Curieux et motivé, j'apprécie relever des défis techniques et
+          contribuer à des projets structurés au sein d'une équipe. N'hésitez
+          pas à me contacter pour échanger, que ce soit pour une alternance ou
+          un premier emploi.
         </p>
       </section>
     </div>

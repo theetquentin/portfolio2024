@@ -9,9 +9,9 @@ const MenuItems: MenuItemProps[] = [
   { name: "Contact", url: "#contact" },
   {
     name: "CV",
-    url: "/assets/cv_theet_quentin.pdf",
+    url: "/assets/cv_theetquentin.pdf",
     icon: <IoDownloadOutline className="w-6 h-6 text-primary" />,
-    download: "cv_theet_quentin.pdf",
+    download: "cv_theetquentin.pdf",
   },
 ];
 

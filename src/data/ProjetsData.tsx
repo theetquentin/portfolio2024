@@ -23,7 +23,7 @@ const ProjetsData: ProjetsDataProps[] = [
     description:
       "Une application web moderne sur le thème Pokémon (pokédex multilingue) développée avec React, TypeScript, TailwindCSS et l'aide du wrapper poke-node.",
     lien: "https://github.com/theetquentin/PokeUtility",
-    langages: ["JavaScript", "TypeScript","React","TailwindCSS"],
+    langages: ["JavaScript", "TypeScript", "React", "TailwindCSS"],
   },
   {
     id: 4,
@@ -47,7 +47,23 @@ const ProjetsData: ProjetsDataProps[] = [
     description:
       "Ce projet est une application intranet construite avec une architecture en couches.",
     lien: "https://github.com/LuffyStar93/Projet-Intranet---Architecture-en-Couches",
-    langages: ["JavaScript", "TypeScript", "React", "ExpressJS","MySQL"],
+    langages: ["JavaScript", "TypeScript", "React", "ExpressJS", "MySQL"],
+  },
+  {
+    id: 7,
+    titre: "Projet Robi",
+    description:
+      "Il s'agit d'une application Java modulaire mettant en œuvre un moteur graphique 2D et un interpréteur de commandes.",
+    lien: "https://github.com/theetquentin/cumuluscda",
+    langages: ["Java"],
+  },
+  {
+    id: 8,
+    titre: "PokemonAnalyzer",
+    description:
+      "Application permettant d'analyser des Pokémons avec reconnaissance OCR et calcul de super-efficacité en direct. Utilisation de PySide6 pour l'interface.",
+    lien: "https://github.com/theetquentin/PokemonAnalyzer",
+    langages: ["Python"],
   },
 ];
 

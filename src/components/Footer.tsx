@@ -36,8 +36,8 @@ const Footer = () => {
               <IoLogoGithub className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
             </a>
             <a
-              href="/assets/cv_theet_quentin.pdf"
-              download="cv_theet_quentin.pdf"
+              href="/assets/cv_theetquentin.pdf"
+              download="cv_theetquentin.pdf"
               target="_blank"
               className="group p-2 rounded-full flex items-center gap-2 text-lg sm:text-xl text-primary/85 hover:bg-card/70 transition-colors"
             >

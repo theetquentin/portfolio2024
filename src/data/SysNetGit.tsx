@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGitAlt } from "react-icons/fa";
+import { FaGitAlt, FaDocker } from "react-icons/fa";
 import { IoGlobeOutline } from "react-icons/io5";
 import { SiGnubash, SiPowershell } from "react-icons/si";
 import SkillList from "../components/SkillList";
@@ -10,6 +10,11 @@ const SysNetGit: React.FC = () => {
       name: "Git",
       icon: <FaGitAlt className="w-6 h-6 text-primary" />,
       url: "https://git-scm.com/",
+    },
+    {
+      name: "Docker",
+      icon: <FaDocker className="w-6 h-6 text-primary" />,
+      url: "https://docs.docker.com/",
     },
     {
       name: "Bash",

@@ -18,7 +18,7 @@ const DevLogiciel = () => {
       ),
     },
     {
-      name: "Java",
+      name: "Java, JPA + Hibernate",
       url: "https://www.oracle.com/java/",
       icon: <FaJava className="w-6 h-6 text-primary" />,
     },

@@ -7,6 +7,7 @@ const LangagesData: string[] = [
   "VueJS",
   "ExpressJS",
   "TailwindCSS",
+  "Python",
 ];
 
 export default LangagesData;
